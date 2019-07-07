@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  pool: 5
+
+development:
+  <<: *default
+  database: simple_travel_planner_development
+
+test:
+  <<: *default
+  database: simple_travel_planner_test
