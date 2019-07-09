@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/bcrivelaro/simple_trip_planner/tree/master.svg?style=svg)](https://circleci.com/gh/bcrivelaro/simple_trip_planner/tree/master)
+
 # Goal
 I use this app to study some concepts, libraries, etc. It consists in a planner where the user can calculate the estimated cost of a trip.
 
