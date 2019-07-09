@@ -22,7 +22,7 @@ class TripsController < ApplicationController
   end
 
   def show
-    @trip_data = nil
+    @pie_chart_data = Trip::GraphData.fetch(@trip)
     @activities = @trip.activities.order(:start_at)
   end
 

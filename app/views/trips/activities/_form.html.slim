@@ -25,10 +25,18 @@
             .input-group-text
               i.fa.fa-calendar
   .form-group
+    .row
+      .col-md-4
+        = f.label :location
+        = f.text_field :location, class: 'form-control'
+      .col-md-4
+        = f.label :category
+        = f.text_field :category, class: 'form-control'
+      .col-md-4
+        = f.label :price
+        = f.number_field :price, class: 'form-control', min: 0, step: 0.01
+  .form-group
     = f.label :notes
     = f.text_area :notes, class: 'form-control', rows: 10
-  .form-group
-    = f.label :price
-    = f.number_field :price, class: 'form-control', min: 1, step: 0.5
   .form-group
     = f.submit class: 'btn btn-primary'

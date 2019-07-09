@@ -30,5 +30,18 @@ body {
 
 .valign {
   display: flex;
-  align-items: center
+  align-items: center;
+}
+
+.activity-description {
+  margin-bottom: 0;
+}
+
+.activity-location {
+  display: inline-block;
+  margin-left: 0.3em;
+}
+
+.category-icon {
+  margin-left: 0.3em;
 }

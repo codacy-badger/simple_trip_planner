@@ -48,6 +48,6 @@ class Trips::ActivitiesController < ApplicationController
 
   def activity_params
     params.require(:activity).permit(:description, :start_at, :end_at, :notes,
-                                     :price)
+                                     :price, :category, :location)
   end
 end

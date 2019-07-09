@@ -1,16 +1,18 @@
-.card.border-primary
-  .card-body
-    h5.card-title= @trip.title
-    .card-text
-      p= between(@trip.start_at, @trip.end_at)
-      p= @trip.notes
+.row
+  .col-md-6
+    .card.border-primary
+      .card-body
+        h1.card-title= @trip.title
+        .card-text
+          p= between(@trip.start_at, @trip.end_at)
+          p= @trip.notes
 
-    = link_to 'Edit trip', edit_trip_path(@trip), class: 'btn btn-secondary', style: 'margin-right: 10px'
-    = link_to 'Add activity', new_trip_activity_path(@trip), class: 'btn btn-primary'
+        = link_to 'Edit trip', edit_trip_path(@trip), class: 'btn btn-secondary', style: 'margin-right: 10px'
+        = link_to 'Add activity', new_trip_activity_path(@trip), class: 'btn btn-primary'
+  .col-md-6
+    = render 'graphs', data: @trip_data
 
 - if @activities.any?
   - @activities.each do |activity|
     br
     = render 'activity_info', activity: activity
-
-  = render 'graphs', data: @trip_data

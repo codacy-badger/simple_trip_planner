@@ -44,6 +44,8 @@ gem 'slim-rails', '3.2.0'
 gem 'devise', '4.6.2'
 # https://github.com/hisea/devise-bootstrap-views
 gem 'devise-bootstrap-views', '1.1.0'
+# https://github.com/ankane/chartkick
+gem 'chartkick', '1.4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
