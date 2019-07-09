@@ -13,7 +13,7 @@ WORKDIR /simple_trip_planner
 # Install gems
 COPY Gemfile /simple_trip_planner/Gemfile
 COPY Gemfile.lock /simple_trip_planner/Gemfile.lock
-RUN bundle install
+RUN bundle install --jobs 20 --retry 5
 
 # Install yarn packages
 COPY package.json yarn.lock /app/
