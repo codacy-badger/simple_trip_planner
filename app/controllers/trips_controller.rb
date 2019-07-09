@@ -21,7 +21,10 @@ class TripsController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    @trip_data = nil
+    @activities = @trip.activities.order(:start_at)
+  end
 
   def edit; end
 

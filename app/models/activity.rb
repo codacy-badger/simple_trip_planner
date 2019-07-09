@@ -1,8 +1,7 @@
-class Trip < ApplicationRecord
-  belongs_to :user
-  has_many :activities
+class Activity < ApplicationRecord
+  belongs_to :trip
 
-  validates :title, presence: true
+  validates :description, presence: true
   validate :end_at_after_start_at, if: lambda {
     start_at.present? && end_at.present?
   }

@@ -1,15 +1,15 @@
 $(document).on('turbolinks:load', function() {
-  $('#start-at-datetimepicker').datetimepicker({
+  $('#trip-start-at').datetimepicker({
     format: 'YYYY/MM/DD HH:mm'
   });
-  $('#end-at-datetimepicker').datetimepicker({
+  $('#trip-end-at').datetimepicker({
     format: 'YYYY/MM/DD HH:mm',
     useCurrent: false
   });
-  $("#start-at-datetimepicker").on("change.datetimepicker", function (e) {
-    $('#end-at-datetimepicker').datetimepicker('minDate', e.date);
+  $("#trip-start-at").on("change.datetimepicker", function (e) {
+    $('#trip-end-at').datetimepicker('minDate', e.date);
   });
-  $("#end-at-datetimepicker").on("change.datetimepicker", function (e) {
-      $('#start-at-datetimepicker').datetimepicker('maxDate', e.date);
+  $("#trip-end-at").on("change.datetimepicker", function (e) {
+      $('#trip-start-at').datetimepicker('maxDate', e.date);
   });
 })

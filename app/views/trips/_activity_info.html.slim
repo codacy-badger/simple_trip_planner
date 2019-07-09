@@ -1,0 +1,14 @@
+.activity-info
+  .row
+    .col-md-9
+      b= activity.description
+      .text-muted
+        = between(activity.start_at, activity.end_at)
+        = " (#{number_to_currency(activity.price, unit: '$')})"
+      = activity.notes
+    .col-md-3.valign
+      .btn-group
+        = link_to 'Edit', edit_trip_activity_path(@trip, activity), class: 'btn btn-secondary'
+        = link_to 'Delete', trip_activity_path(@trip, activity),
+                  method: :delete, data: { confirm: 'Are you sure?' },
+                  class: 'btn btn-danger'

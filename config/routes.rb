@@ -10,5 +10,9 @@ Rails.application.routes.draw do
   end
   devise_for :users
 
-  resources :trips
+  resources :trips do
+    scope module: :trips do
+      resources :activities, except: %i[index show]
+    end
+  end
 end

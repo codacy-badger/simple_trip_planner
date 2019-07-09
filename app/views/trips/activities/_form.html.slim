@@ -1,0 +1,34 @@
+= render 'shared/errors', obj: @activity
+
+= form_for([@trip, @activity], html: { class: 'form-horizontal', role: 'form' }) do |f|
+  .form-group
+    = f.label :description
+    = f.text_field :description, class: 'form-control'
+  .form-group
+    .row
+      .col-md-6
+        = f.label :start_at
+        #activity-start-at.datetimepicker.input-group.date data-target-input="nearest"
+          = f.text_field :start_at,
+                        class: 'form-control datetimepicker-input',
+                        data: { target: '#activity-start-at' }
+          .input-group-append data-target="#activity-start-at" data-toggle="datetimepicker"
+            .input-group-text
+              i.fa.fa-calendar
+      .col-md-6
+        = f.label :end_at
+        #activity-end-at.datetimepicker.input-group.date data-target-input="nearest"
+          = f.text_field :end_at,
+                        class: 'form-control datetimepicker-input',
+                        data: { target: '#activity-end-at' }
+          .input-group-append data-target="#activity-end-at" data-toggle="datetimepicker"
+            .input-group-text
+              i.fa.fa-calendar
+  .form-group
+    = f.label :notes
+    = f.text_area :notes, class: 'form-control', rows: 10
+  .form-group
+    = f.label :price
+    = f.number_field :price, class: 'form-control', min: 1, step: 0.5
+  .form-group
+    = f.submit class: 'btn btn-primary'

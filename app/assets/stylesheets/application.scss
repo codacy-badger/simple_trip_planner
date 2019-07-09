@@ -21,3 +21,14 @@
 body {
   padding-top: 5rem;
 }
+
+.activity-info {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 16px;
+  padding: 0.01em 16px;
+}
+
+.valign {
+  display: flex;
+  align-items: center
+}

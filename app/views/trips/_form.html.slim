@@ -8,20 +8,20 @@
     .row
       .col-md-6
         = f.label :start_at
-        #start-at-datetimepicker.datetimepicker.input-group.date data-target-input="nearest"
+        #trip-start-at.datetimepicker.input-group.date data-target-input="nearest"
           = f.text_field :start_at,
                         class: 'form-control datetimepicker-input',
-                        data: { target: '#start-at-datetimepicker' }
-          .input-group-append data-target="#start-at-datetimepicker" data-toggle="datetimepicker"
+                        data: { target: '#trip-start-at' }
+          .input-group-append data-target="#trip-start-at" data-toggle="datetimepicker"
             .input-group-text
               i.fa.fa-calendar
       .col-md-6
         = f.label :end_at
-        #end-at-datetimepicker.datetimepicker.input-group.date data-target-input="nearest"
+        #trip-end-at.datetimepicker.input-group.date data-target-input="nearest"
           = f.text_field :end_at,
                         class: 'form-control datetimepicker-input',
-                        data: { target: '#end-at-datetimepicker' }
-          .input-group-append data-target="#end-at-datetimepicker" data-toggle="datetimepicker"
+                        data: { target: '#trip-end-at' }
+          .input-group-append data-target="#trip-end-at" data-toggle="datetimepicker"
             .input-group-text
               i.fa.fa-calendar
   .form-group
