@@ -57,6 +57,8 @@ group :development, :test do
   gem 'rails-controller-testing', '1.0.4'
   # https://github.com/rweng/pry-rails
   gem 'pry-rails', '0.3.9'
+  # https://github.com/rubocop-hq/rubocop
+  gem 'rubocop', '0.72.0', require: false
 end
 
 group :development do

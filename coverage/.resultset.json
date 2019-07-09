@@ -1,0 +1,129 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/simple_travel_planner/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/simple_travel_planner/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/simple_travel_planner/app/helpers/application_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/simple_travel_planner/app/models/trip.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        4,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/simple_travel_planner/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/simple_travel_planner/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/simple_travel_planner/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
+      "/simple_travel_planner/app/controllers/trips_controller.rb": [
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/simple_travel_planner/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/simple_travel_planner/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1562687563
+  }
+}

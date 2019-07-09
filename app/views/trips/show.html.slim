@@ -1,0 +1,21 @@
+b
+  label Title
+p= @trip.title
+
+b
+  label Start at
+p
+  - if @trip.start_at.present?
+    = l @trip.start_at, format: :long
+
+b
+  label End at
+p
+  - if @trip.end_at.present?
+    = l @trip.end_at, format: :long
+
+b
+  label Notes
+p= @trip.notes
+
+= link_to 'Edit', edit_trip_path(@trip), class: 'btn btn-secondary'

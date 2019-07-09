@@ -1,0 +1,19 @@
+- if @trips.any?
+  table.table
+    thead.thead-dark
+      tr
+        th Trip
+        th Actions
+    tbody
+      - @trips.each do |trip|
+        tr
+          td = trip.title
+          td
+            .btn-group role="group"
+              = link_to 'View', trip_path(trip), class: 'btn btn-primary'
+              = link_to 'Edit', edit_trip_path(trip), class: 'btn btn-secondary'
+              = link_to 'Delete', trip_path(trip),
+                        method: :delete, data: { confirm: 'Are you sure?' },
+                        class: 'btn btn-danger'
+- else
+  = link_to 'New trip', new_trip_path, class: 'btn btn-primary'
