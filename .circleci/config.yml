@@ -9,7 +9,7 @@ jobs:
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
-          PGUSER: circleci-simple-trip-planner-ruby
+          PGUSER: posstgres
           RAILS_ENV: test
       - image: circleci/postgres:11.4-alpine
         environment:
@@ -62,7 +62,7 @@ jobs:
 
       - run:
           name: Database setup
-          command: bin/rails db:schema:load --trace
+          command: bin/rails db:create && bin/rails db:schema:load --trace
 
       # Run rspec in parallel
       - run:
