@@ -13,7 +13,7 @@ jobs:
           RAILS_ENV: test
       - image: circleci/postgres:11.4-alpine
         environment:
-          POSTGRES_USER: circleci-simple-trip-planner-ruby
+          POSTGRES_USER: postgres
           POSTGRES_DB: simple_trip_planner
           POSTGRES_PASSWORD: ""
     steps:
