@@ -6,7 +6,13 @@ https://trello.com/b/SqzuJiMe/simple-trip-planner
 
 ### Dev environment
 
-You only need docker:
+Copy `.env` file:
+
+```
+cp .env.example .env
+```
+
+After that, you only need Docker:
 
 ```bash
 $ docker-compose build
