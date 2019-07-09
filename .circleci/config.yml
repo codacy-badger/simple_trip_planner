@@ -64,6 +64,11 @@ jobs:
           name: Database setup
           command: bin/rails db:create && bin/rails db:schema:load --trace
 
+      - run:
+          command: |
+            echo $(circleci tests glob "spec/**/*_spec.rb")
+            echo $(circleci tests split --split-by=timings)
+
       # Run rspec in parallel
       - run:
           name: Run rspec in parallel
