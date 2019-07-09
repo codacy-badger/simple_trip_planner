@@ -1,2 +1,8 @@
 .text-center
-  = link_to 'Bruno Crivelaro', 'https://github.com/bcrivelaro', target: '_blank'
+  | Bruno Crivelaro -
+  '
+  = link_to 'https://github.com/bcrivelaro', target: '_blank' do
+    span.fa.fa-github.fa-clickable
+  '
+  = link_to 'https://www.linkedin.com/in/brunosantoscrivelaro/', target: '_blank' do
+    span.fa.fa-linkedin.fa-clickable

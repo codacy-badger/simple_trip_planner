@@ -18,4 +18,5 @@
 //= require tempusdominus-bootstrap-4
 //= require chartkick/dist/chartkick
 //= require chart.js/dist/Chart
+//= require toastr/toastr
 //= require_tree .

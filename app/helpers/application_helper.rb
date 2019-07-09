@@ -1,12 +1,12 @@
 module ApplicationHelper
-  def flash_class(key)
+  def toastr_key(key)
     case key
     when 'notice', 'success'
       'success'
     when 'error', 'alert'
-      'danger'
+      'error'
     else
-      'primary'
+      'warning'
     end
   end
 

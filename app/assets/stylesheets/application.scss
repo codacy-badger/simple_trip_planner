@@ -17,6 +17,7 @@
 @import "bootstrap/dist/css/bootstrap";
 @import "font-awesome-overwrite";
 @import "tempusdominus-bootstrap-4";
+@import "toastr/toastr";
 
 body {
   padding-top: 5rem;
@@ -44,4 +45,10 @@ body {
 
 .category-icon {
   margin-left: 0.3em;
+}
+
+.fa-clickable {
+  cursor: pointer;
+  outline: none;
+  color: rgb(34, 37, 41);
 }
