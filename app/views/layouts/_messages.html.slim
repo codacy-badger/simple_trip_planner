@@ -1,0 +1,5 @@
+- flash.each do |key, value|
+  div[class="alert alert-#{flash_class(key)}" role="alert"]
+    a.close[href="#" data-dismiss="alert"]
+      | ×
+    = value

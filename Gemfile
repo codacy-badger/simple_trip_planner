@@ -33,6 +33,18 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# https://github.com/slim-template/slim
+gem 'slim', '4.0.1'
+
+# https://github.com/slim-template/slim-rails
+gem 'slim-rails', '3.2.0'
+
+# https://github.com/plataformatec/devise
+gem 'devise', '4.6.2'
+
+# https://github.com/hisea/devise-bootstrap-views
+gem 'devise-bootstrap-views', '1.1.0'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

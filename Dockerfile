@@ -1,12 +1,24 @@
 FROM ruby:2.6.3
-RUN apt-get update -qq && apt-get install -y build-essential nodejs \
-  postgresql-client libpq-dev
+
+ENV PATH=/root/.yarn/bin:$PATH
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt-get update -qq && apt-get install -y build-essential nodejs yarn \
+      postgresql-client libpq-dev
 
 RUN mkdir /simple_travel_planner
 WORKDIR /simple_travel_planner
+
+# Install gems
 COPY Gemfile /simple_travel_planner/Gemfile
 COPY Gemfile.lock /simple_travel_planner/Gemfile.lock
 RUN bundle install
+
+# Install yarn packages
+COPY package.json yarn.lock /app/
+RUN yarn install
+
 COPY . /simple_travel_planner
 
 # Add a script to be executed every time the container starts.
