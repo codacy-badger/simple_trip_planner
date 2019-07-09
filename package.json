@@ -1,5 +1,5 @@
 {
-  "name": "simple_travel_planner",
+  "name": "simple_trip_planner",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",

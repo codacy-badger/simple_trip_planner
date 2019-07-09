@@ -4,14 +4,11 @@
       h5.activity-description
         = activity.description
         span.badge.badge-primary.category-icon= activity.category
+      - if activity.location.present?
+        span.fa.fa-map-marker
+        .activity-location
+          = activity.location
       .text-muted
-        - if activity.location.present?
-          span.fa.fa-map-marker
-          .activity-location
-            = activity.location
-          '
-          ' -
-          '
         = between(activity.start_at, activity.end_at)
         = " (#{number_to_currency(activity.price, unit: '$')})"
       = activity.notes

@@ -7,19 +7,19 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update -qq && apt-get install -y build-essential nodejs yarn \
       postgresql-client libpq-dev
 
-RUN mkdir /simple_travel_planner
-WORKDIR /simple_travel_planner
+RUN mkdir /simple_trip_planner
+WORKDIR /simple_trip_planner
 
 # Install gems
-COPY Gemfile /simple_travel_planner/Gemfile
-COPY Gemfile.lock /simple_travel_planner/Gemfile.lock
+COPY Gemfile /simple_trip_planner/Gemfile
+COPY Gemfile.lock /simple_trip_planner/Gemfile.lock
 RUN bundle install
 
 # Install yarn packages
 COPY package.json yarn.lock /app/
 RUN yarn install
 
-COPY . /simple_travel_planner
+COPY . /simple_trip_planner
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
