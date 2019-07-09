@@ -33,24 +33,30 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# https://github.com/slim-template/slim
-gem 'slim', '4.0.1'
-
-# https://github.com/slim-template/slim-rails
-gem 'slim-rails', '3.2.0'
-
-# https://github.com/plataformatec/devise
-gem 'devise', '4.6.2'
-
-# https://github.com/hisea/devise-bootstrap-views
-gem 'devise-bootstrap-views', '1.1.0'
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# https://github.com/slim-template/slim
+gem 'slim', '4.0.1'
+# https://github.com/slim-template/slim-rails
+gem 'slim-rails', '3.2.0'
+# https://github.com/plataformatec/devise
+gem 'devise', '4.6.2'
+# https://github.com/hisea/devise-bootstrap-views
+gem 'devise-bootstrap-views', '1.1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # https://github.com/rspec/rspec-rails
+  gem 'rspec-rails', '3.8.2'
+  # https://github.com/thoughtbot/factory_bot_rails
+  gem 'factory_bot_rails', '5.0.2'
+  # https://github.com/thoughtbot/shoulda-matchers
+  gem 'shoulda-matchers', '4.1.0'
+  gem 'rails-controller-testing', '1.0.4'
+  # https://github.com/rweng/pry-rails
+  gem 'pry-rails', '0.3.9'
 end
 
 group :development do
@@ -60,6 +66,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites. Read more: https://github.com/colszowka/simplecov
+  gem 'simplecov', '0.17.0', require: false
 end
 
 group :test do
