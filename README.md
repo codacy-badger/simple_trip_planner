@@ -1,24 +1,17 @@
-# README
+# Goal
+I use this app to study some concepts, libraries, etc. It consists in a planner where the user can calculate the estimated cost of a trip.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Trello board
+https://trello.com/b/SqzuJiMe/simple-trip-planner
 
-Things you may want to cover:
+### Dev environment
 
-* Ruby version
+You only need docker:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ docker-compose build
+$ docker-compose run
+# In another terminal window
+$ docker-compose run web rails db:create
+$ docker-compose run web rails db:migrate
+```
