@@ -1,0 +1,9 @@
+.circleci
+.git
+/tmp/*
+/log/*
+*.md
+.rubocop*
+Dockerfile
+Dockerfile.dev
+docker-compose.yml
