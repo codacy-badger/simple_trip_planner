@@ -74,6 +74,11 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites. Read more: https://github.com/colszowka/simplecov
   gem 'simplecov', '0.17.0', require: false
+  # https://github.com/BetterErrors/better_errors
+  gem 'better_errors', '2.5.1'
+  gem 'binding_of_caller', '0.8.0'
+  # https://github.com/flyerhzm/bullet
+  gem 'bullet', '6.0.1'
 end
 
 group :test do

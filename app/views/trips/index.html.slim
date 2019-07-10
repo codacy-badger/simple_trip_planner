@@ -7,7 +7,7 @@
     tbody
       - @trips.each do |trip|
         tr
-          td = trip.title
+          td= trip.title
           td
             .btn-group role="group"
               = link_to 'View', trip_path(trip), class: 'btn btn-primary'
