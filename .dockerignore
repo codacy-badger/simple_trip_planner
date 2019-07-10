@@ -9,3 +9,4 @@ Dockerfile.dev
 docker-compose.yml
 .env
 .env.sample
+/coverage/*
