@@ -5,7 +5,7 @@ RSpec.describe Activity, type: :model do
   it { should validate_presence_of(:description) }
 
   context 'start at after end at' do
-    subject { build(:trip, start_at: 1.day.from_now, end_at: 1.day.ago) }
+    subject { build(:activity, start_at: 1.day.from_now, end_at: 1.day.ago) }
 
     before do
       subject.save
