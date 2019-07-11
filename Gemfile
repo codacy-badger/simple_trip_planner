@@ -11,14 +11,11 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'dotenv-rails', '2.7.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+# https://github.com/rails/webpacker
+gem 'webpacker', '4.0.7'
 # https://github.com/slim-template/slim
 gem 'slim', '4.0.1'
 # https://github.com/slim-template/slim-rails

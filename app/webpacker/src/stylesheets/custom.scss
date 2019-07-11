@@ -1,0 +1,33 @@
+body {
+  padding-top: 5rem;
+}
+
+.activity-info {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 16px;
+  padding: 0.01em 16px;
+}
+
+.valign {
+  display: flex;
+  align-items: center;
+}
+
+.activity-description {
+  margin-bottom: 0;
+}
+
+.activity-location {
+  display: inline-block;
+  margin-left: 0.3em;
+}
+
+.category-icon {
+  margin-left: 0.3em;
+}
+
+.fa-clickable {
+  cursor: pointer;
+  outline: none;
+  color: rgb(34, 37, 41);
+}
