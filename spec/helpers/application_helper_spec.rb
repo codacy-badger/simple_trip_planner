@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe ApplicationHelper do
   describe '#toastr_key' do
     context 'when notice' do
